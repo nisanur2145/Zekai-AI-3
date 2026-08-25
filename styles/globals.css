@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #fce7f3 0%, #e0bbf9 50%, #bfdbfe 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Pastel Color Theme */
+:root {
+  --pastel-pink: #fce7f3;
+  --pastel-purple: #e0bbf9;
+  --pastel-blue: #bfdbfe;
+  --pastel-green: #dcfce7;
+  --pastel-yellow: #fef3c7;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ec4899, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pastel-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.ai-input {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e0bbf9;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.ai-input:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
